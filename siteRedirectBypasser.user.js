@@ -4,8 +4,12 @@
 // @version      0.1.0
 // @description  Bypasses redirect sites
 // @author       OrangutanGaming
-// @include      *bluemediafiles.com/creatinglinks8qJG9LfyFidlaldiwli1kTUSkSn82FylsejFCipVsahU2r2FXfgX2LgYHme3*
-// @include      *steamcommunity.com/linkfilter/?url=*
+// @run-at       document-start
+// @updateURL	 https://raw.githubusercontent.com/OrangutanGaming/siteRedirectBypasser/master/siteRedirectBypasser.user.js
+// @downloadURL  https://raw.githubusercontent.com/OrangutanGaming/siteRedirectBypasser/master/siteRedirectBypasser.user.js
+// @supportURL   https://github.com/OrangutanGaming/siteRedirectBypasser/issues
+// @match        *bluemediafiles.com/creatinglinks8qJG9LfyFidlaldiwli1kTUSkSn82FylsejFCipVsahU2r2FXfgX2LgYHme3*
+// @match        *steamcommunity.com/linkfilter/?url=*
 // ==/UserScript==
 
 var url = content.document.location;
