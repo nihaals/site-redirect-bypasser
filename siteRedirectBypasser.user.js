@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Site Redirect Bypasser
 // @namespace    https://github.com/OrangutanGaming/siteRedirectBypasser
-// @version      0.1.0
+// @version      0.1.1
 // @description  Bypasses redirect sites
 // @author       OrangutanGaming
 // @run-at       document-start
@@ -10,13 +10,15 @@
 // @supportURL   https://github.com/OrangutanGaming/siteRedirectBypasser/issues
 // @match        *bluemediafiles.com/creatinglinks8qJG9LfyFidlaldiwli1kTUSkSn82FylsejFCipVsahU2r2FXfgX2LgYHme3*
 // @match        *steamcommunity.com/linkfilter/?url=*
+// @match        *rover.ebay.*/rover/0/0/0?mpre=*
 // ==/UserScript==
 
 var url = content.document.location;
 
 var regexs = [
     [/https{0,1}:\/\/bluemediafiles\.com\/creatinglinks8qJG9LfyFidlaldiwli1kTUSkSn82FylsejFCipVsahU2r2FXfgX2LgYHme3\?xurl=(.+)/g, 'http'],
-    [/https{0,1}:\/\/steamcommunity\.com\/linkfilter\/\?url=(.+)/g, '']
+    [/https{0,1}:\/\/steamcommunity\.com\/linkfilter\/\?url=(.+)/g, ''],
+    [/https{0,1}:\/\/rover\.ebay\.[a-z.]+\/rover\/0\/0\/0\?mpre=(.+)/g, '']
 ];
 
 for (i = 0; i < regexs.length; i++) {
