@@ -6,6 +6,9 @@ Site Redirect Bypasser is a simple user script for bypassing sites that ask you 
 
 * bluemediafiles.com/creatinglinks8qJG9LfyFidlaldiwli1kTUSkSn82FylsejFCipVsahU2r2FXfgX2LgYHme3
 * steamcommunity.com/linkfilter
+* rover.ebay.com/rover
+* anon.to
+* creativecow.net/interstitial.php
 
 ## Installation ##
 
