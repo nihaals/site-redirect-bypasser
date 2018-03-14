@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Site Redirect Bypasser
 // @namespace    https://github.com/OrangutanGaming/siteRedirectBypasser
-// @version      0.1.3
+// @version      0.1.4
 // @description  Bypasses redirect sites
 // @author       OrangutanGaming
 // @run-at       document-start
@@ -13,6 +13,7 @@
 // @include      *rover.ebay.*/rover/0/0/0?mpre=*
 // @include      *anon.to/?*
 // @include      *creativecow.net/interstitial.php?url=*
+// @include      *guildwars2.com/home/leaving?target=*
 // ==/UserScript==
 
 var url = content.document.location;
@@ -22,7 +23,8 @@ var regexs = [
     [/https{0,1}:\/\/(?:www\.){0,1}steamcommunity\.com\/linkfilter\/\?url=(.+)/g, ''],
     [/https{0,1}:\/\/(?:www\.){0,1}rover\.ebay\.[a-z.]+\/rover\/0\/0\/0\?mpre=(.+)/g, ''],
     [/https{0,1}:\/\/(?:www\.){0,1}anon\.to\/\?(.+)/g, ''],
-    [/https{0,1}:\/\/(?:www\.){0,1}creativecow\.net\/interstitial\.php\?url=(.+)&id=\d/g, '']
+    [/https{0,1}:\/\/(?:www\.){0,1}creativecow\.net\/interstitial\.php\?url=(.+)&id=\d/g, ''],
+    [/https{0,1}:\/\/(?:en-forum)\.guildwars2\.com\/home\/leaving\?target=(.+)/g, '']
 ];
 
 for (i = 0; i < regexs.length; i++) {
