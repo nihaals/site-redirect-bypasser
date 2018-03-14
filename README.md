@@ -9,6 +9,7 @@ Site Redirect Bypasser is a simple user script for bypassing sites that ask you 
 * rover.ebay.com/rover
 * anon.to
 * creativecow.net/interstitial.php
+* guildwars2.com/home/leaving
 
 ## Installation ##
 
