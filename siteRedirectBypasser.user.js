@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Site Redirect Bypasser
 // @namespace    https://github.com/OrangutanGaming/siteRedirectBypasser
-// @version      0.1.4
+// @version      0.1.5
 // @description  Bypasses redirect sites
 // @author       OrangutanGaming
 // @run-at       document-start
@@ -24,7 +24,7 @@ var regexs = [
     [/https{0,1}:\/\/(?:www\.){0,1}rover\.ebay\.[a-z.]+\/rover\/0\/0\/0\?mpre=(.+)/g, ''],
     [/https{0,1}:\/\/(?:www\.){0,1}anon\.to\/\?(.+)/g, ''],
     [/https{0,1}:\/\/(?:www\.){0,1}creativecow\.net\/interstitial\.php\?url=(.+)&id=\d/g, ''],
-    [/https{0,1}:\/\/(?:en-forum)\.guildwars2\.com\/home\/leaving\?target=(.+)/g, '']
+    [/https{0,1}:\/\/(?:en|fr|es|de)-forum\.guildwars2\.com\/home\/leaving\?target=(.+)/g, '']
 ];
 
 for (i = 0; i < regexs.length; i++) {
