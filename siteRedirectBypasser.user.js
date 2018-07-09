@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Site Redirect Bypasser
 // @namespace    https://github.com/OrangutanGaming/siteRedirectBypasser
-// @version      0.1.6
+// @version      0.1.7
 // @description  Bypasses redirect sites
-// @author       OrangutanGaming
+// @author       OrangutanGaming (Nihaal Sangha)
 // @run-at       document-start
 // @updateURL	 https://raw.githubusercontent.com/OrangutanGaming/siteRedirectBypasser/master/siteRedirectBypasser.user.js
 // @downloadURL  https://raw.githubusercontent.com/OrangutanGaming/siteRedirectBypasser/master/siteRedirectBypasser.user.js
@@ -17,7 +17,7 @@
 // @include      *checktinyurl.com/redirect?url=*
 // ==/UserScript==
 
-var url = content.document.location;
+var url = document.location;
 
 var regexs = [
     [/https{0,1}:\/\/(?:www\.){0,1}bluemediafiles\.com\/creatinglinks8qJG9LfyFidlaldiwli1kTUSkSn82FylsejFCipVsahU2r2FXfgX2LgYHme3\?xurl=(.+)/g, 'http'],
@@ -29,9 +29,9 @@ var regexs = [
     [/https{0,1}:\/\/(?:www\.){0,1}checktinyurl\.com\/redirect\?url=(.+)/g, '']
 ];
 
-for (i = 0; i < regexs.length; i++) {
-    regex = regexs[i][0];
-    redirect = regex.exec(url);
+for (var i = 0; i < regexs.length; i++) {
+    var regex = regexs[i][0];
+    var redirect = regex.exec(url);
     if (redirect) {
         if (redirect.length == 2) {
             var prefix = regexs[i][1];
