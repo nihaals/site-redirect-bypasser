@@ -11,6 +11,7 @@ Site Redirect Bypasser is a simple user script for bypassing sites that ask you 
 * creativecow.net/interstitial.php
 * guildwars2.com/home/leaving
 * checktinyurl.com/redirect
+* t.umblr.com/redirect
 
 ## Installation ##
 
