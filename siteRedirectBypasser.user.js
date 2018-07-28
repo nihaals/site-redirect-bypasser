@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Site Redirect Bypasser
 // @namespace    https://github.com/OrangutanGaming/siteRedirectBypasser
-// @version      0.1.7
+// @version      0.1.8
 // @description  Bypasses redirect sites
 // @author       OrangutanGaming (Nihaal Sangha)
 // @run-at       document-start
@@ -15,7 +15,10 @@
 // @include      *creativecow.net/interstitial.php?url=*
 // @include      *guildwars2.com/home/leaving?target=*
 // @include      *checktinyurl.com/redirect?url=*
+// @include      *t.umblr.com/redirect?z=*
 // ==/UserScript==
+
+'use strict';
 
 var url = document.location;
 
@@ -26,7 +29,8 @@ var regexs = [
     [/https{0,1}:\/\/(?:www\.){0,1}anon\.to\/\?(.+)/g, ''],
     [/https{0,1}:\/\/(?:www\.){0,1}creativecow\.net\/interstitial\.php\?url=(.+)&id=\d/g, ''],
     [/https{0,1}:\/\/(?:en|fr|es|de)-forum\.guildwars2\.com\/home\/leaving\?target=(.+)/g, ''],
-    [/https{0,1}:\/\/(?:www\.){0,1}checktinyurl\.com\/redirect\?url=(.+)/g, '']
+    [/https{0,1}:\/\/(?:www\.){0,1}checktinyurl\.com\/redirect\?url=(.+)/g, ''],
+    [/https{0,1}:\/\/(?:www\.){0,1}t\.umblr\.com\/redirect\?z=(.*?)&.+/g, '']
 ];
 
 for (var i = 0; i < regexs.length; i++) {
