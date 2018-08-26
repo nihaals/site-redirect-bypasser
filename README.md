@@ -12,6 +12,7 @@ Site Redirect Bypasser is a simple user script for bypassing sites that ask you 
 * guildwars2.com/home/leaving
 * checktinyurl.com/redirect
 * t.umblr.com/redirect
+* plus.url.google.com/url
 
 ## Installation ##
 
