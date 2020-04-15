@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Site Redirect Bypasser
 // @namespace    https://github.com/OrangutanGaming/siteRedirectBypasser
-// @version      0.1.9
+// @version      0.1.10
 // @description  Bypasses redirect sites
-// @author       OrangutanGaming (Nihaal Sangha)
+// @author       Nihaal Sangha
 // @run-at       document-start
-// @updateURL	 https://raw.githubusercontent.com/OrangutanGaming/siteRedirectBypasser/master/siteRedirectBypasser.user.js
-// @downloadURL  https://raw.githubusercontent.com/OrangutanGaming/siteRedirectBypasser/master/siteRedirectBypasser.user.js
-// @supportURL   https://github.com/OrangutanGaming/siteRedirectBypasser/issues
+// @updateURL	 https://raw.githubusercontent.com/nihaals/site-redirect-bypasser/master/siteRedirectBypasser.user.js
+// @downloadURL  https://raw.githubusercontent.com/nihaals/site-redirect-bypasser/master/siteRedirectBypasser.user.js
+// @supportURL   https://github.com/nihaals/site-redirect-bypasser/issues
 // @include      *bluemediafiles.com/creatinglinks8qJG9LfyFidlaldiwli1kTUSkSn82FylsejFCipVsahU2r2FXfgX2LgYHme3*
 // @include      *steamcommunity.com/linkfilter*
 // @include      *rover.ebay.*/rover/0/0/0?mpre=*
